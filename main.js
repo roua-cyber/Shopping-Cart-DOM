@@ -45,15 +45,16 @@ var  plusbuttons=document.getElementsByClassName('plus-btn') ;
     })
 }
 
-var  plusbuttons=document.getElementsByClassName('minus-btn') ;
+var  minusbuttons=document.getElementsByClassName('minus-btn') ;
 
-    for(i=0;i<plusbuttons.length;i++) {
-    var plusbutton=plusbuttons[i];
-    plusbutton.addEventListener('click',function(event){
+    for(i=0;i<minusbuttons.length;i++) {
+    var minusbutton=minusbuttons[i];
+    minusbutton.addEventListener('click',function(event){
     clickedplusbutton=event.target;
+    if (parseFloat(clickedplusbutton.previousElementSibling.value)-1>=0){
     clickedplusbutton.previousElementSibling.value=parseFloat(clickedplusbutton.previousElementSibling.value)-1 ;
     updatecarttotal ();
-
+    }
     })
 }
     
