@@ -1,0 +1,145 @@
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  body{
+    background-image: url('image/back.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .shopping-cart {
+    width: 750px;
+    height: 500px;
+    margin: 100px auto;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+   
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    height: 60px;
+    border-bottom: 1px solid #E1E8EE;
+    padding: 20px 30px;
+    color: #5E6977;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E1E8EE;
+
+ }
+.buttons{
+     display: flex;
+     align-items: center;
+     width: 170px;
+}
+  .del-btn,
+  .like-btn {
+    padding:20px;
+    Cursor: pointer;
+  }
+  .del-btn{
+     margin-right: 10px; 
+  }
+  .like-btn{
+     margin-right: 30px; 
+     color:rgb(202, 197, 197);
+  }
+  .red{
+    color: rgb(190, 22, 22);
+  }
+  .description span{
+    width: 100px;
+      line-height: 20px;
+      display: inline-block;
+      font-size: 14px;
+      color: #43484D;
+      font-weight: 400;
+
+  }
+  .image img{
+    margin-right: 30px; 
+    padding: 1.5px ;
+    width: 120px;
+      
+  }
+  .quantity input {
+    border: none;
+    text-align: center;
+    width: 50px;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+}
+  .quantity{
+    margin-right: 30px;       
+    width: 150px;
+  }
+  .plus-btn , .minus-btn{
+    border: none; 
+    width: 30px;
+    height: 30px;
+    background-color:rgb(238, 234, 234);
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .item-price{
+    width: 50px;
+    margin-right: 30px;       
+    color: #43484D;
+    font-size: 16px;
+    text-align: center;
+
+  }
+  .total-price{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .total-price span:first-child{
+    margin-right: 40px;       
+    line-height: 30px;
+    color: #5E6977;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .total-price .total{
+    margin-right: 40px;       
+    color: #43484D;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  
+
+  @media (max-width: 800px) {
+    .shopping-cart {
+      width: 100%;
+      height: auto;
+    }
+    .item {
+      height: auto;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .image img {
+      width: 50%;
+    }
+    .image,.quantity,.description , .item-price {
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;    }
+    
+  }
+ 
