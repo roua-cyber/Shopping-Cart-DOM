@@ -1,6 +1,6 @@
 # Shopping Cart (Javascript and DOM manipulation ) 
 
-For this project , i created a shopping cart.
+For this project , I created a shopping cart.
 
 In this scenario, it’s a cart in which items have already been preselected,
 
