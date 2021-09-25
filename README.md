@@ -1,4 +1,4 @@
-# Shopping Cart (javascript and DOM manipulation ) 
+# Shopping Cart (Javascript and DOM manipulation ) 
 
 For this project , i created a shopping cart.
 
